@@ -11,6 +11,10 @@ function Navbar() {
 
     return (
         <div className={nav ? 'navbar navbar-bg' : 'navbar'}>
+            <div className="nav-response" onClick={handleNav}>
+                {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
+            </div>
+            
             <div className={nav ? 'logo dark' : 'logo'}>
                 <img src="https://cdn.copymatic.ai/static/logo.svg" alt="copymatic" />
             </div>
@@ -28,10 +32,6 @@ function Navbar() {
 
             <div className='nav-signup'>
                 <button className='signup'>Start Free Trial</button>
-            </div>
-
-            <div className="nav-response" onClick={handleNav}>
-                {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
             </div>
 
             <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>

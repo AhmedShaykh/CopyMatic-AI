@@ -94,6 +94,14 @@ span {
         display: none;
     }
 
+    img {
+        margin-left: 0rem;
+    }
+
+    .nav-signup {
+        margin-right: 1rem;
+    }
+
     .dark {
         color: #000;
     }
@@ -117,6 +125,6 @@ span {
 
     .nav-response {
         display: block;
-        margin-left: 1.2rem;
+        margin-left: 0.2rem;
     }
 }
