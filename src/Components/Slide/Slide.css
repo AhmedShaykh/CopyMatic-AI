@@ -15,7 +15,64 @@
     position: relative;
 }
 
+.swticher-btn button {
+    height: 44px;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 50%;
+    border-radius: 28px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 .swticher-btn button:active {
     background: #2E16E6;
     color: #fff;
+}
+
+.swticher-btn .free {
+    position: absolute;
+    margin: 0;
+    right: -150px;
+    font-weight: bolder;
+    display: inline-block;
+    background: #E3E1F4;
+    border-radius: 4px;
+    color: #2e16e6;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.slide-text p {
+    color: #110958;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 35px;
+}
+
+.slide {
+    margin: 10px 0;
+    /* position: relative; */
+    clear: both;
+    height: 20px;
+    display: flex;
+}
+
+.slide .left {
+    left: 0;
+}
+
+.slide .right {
+    right: 0;
+}
+
+.slider-area {
+    padding-top: 10px;
 }
