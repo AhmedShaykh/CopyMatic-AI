@@ -1,4 +1,3 @@
-import FAQ from '../FAQ/FAQ';
 import Slide from '../Slide/Slide';
 
 import './Pricing.css';
