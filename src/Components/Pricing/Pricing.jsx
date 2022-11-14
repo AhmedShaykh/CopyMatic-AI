@@ -1,28 +1,21 @@
-import { useState } from 'react';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+import Slide from '../Slide/Slide';
 
 import './Pricing.css';
 
 const Pricing = () => {
-
-    const [price, SetPrice] = useState(29);
-
-    const changeprice = (event, price) => {
-        SetPrice(price);
-    };
-
     return (
-        <Box className='price-box'>
-            <Slider display="flex" flexDirection="column" alignItems="center"
-                style={{ width: 600 }}
-                min={10}
-                max={100}
-                step={20}
-                price={price}
-                marks
-                onChange={changeprice} />
-        </Box>
+        <div name='price' className='price-box'>
+            <div className="title">
+                <h4>Pricing</h4>
+            </div>
+            <div className="text">
+                <h1>Start writing 10x faster with AI</h1>
+            </div>
+            <p>Our plans are simple and transparent, they are based on the number of generated words on a rolling monthly basis</p>
+            <div>
+                <Slide />
+            </div>
+        </div>
     )
 };
 

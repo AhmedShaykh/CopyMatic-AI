@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
+import { Link } from 'react-scroll';
+
 import './Navbar.css';
 
 const Navbar = () => {
@@ -16,14 +18,16 @@ const Navbar = () => {
             </div>
 
             <div className={nav ? 'logo dark' : 'logo'}>
-                <img src="https://cdn.copymatic.ai/static/logo.svg" alt="copymatic" />
+                <Link to='home' smooth={true} duration={500}>
+                    <span><img src="https://cdn.copymatic.ai/static/logo.svg" alt="copymatic" /></span>
+                </Link>
             </div>
 
             <ul className="nav-menu">
                 <li><span>How it works</span></li>
                 <li><span>Use Cases</span></li>
                 <li><span>Features</span></li>
-                <li><span>Pricing</span></li>
+                <Link to='price' smooth={true} duration={500} ><li><span>Pricing</span></li></Link>
             </ul>
 
             <ul>
@@ -39,7 +43,7 @@ const Navbar = () => {
                     <li><span>How it works</span></li>
                     <li><span>Use Cases</span></li>
                     <li><span>Features</span></li>
-                    <li><span>Pricing</span></li>
+                    <Link to='price' smooth={true} duration={500} ><li><span>Pricing</span></li></Link>
                     <li><span>Login</span></li>
                 </ul>
 
