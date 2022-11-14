@@ -7,6 +7,7 @@
     padding: 1rem;
     box-shadow: 0 1px 4px 0 rgba(92, 89, 89, 0.2);
     position: fixed;
+    z-index: 10;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
 }
@@ -84,6 +85,7 @@ span {
         flex-direction: column;
         width: 100%;
         top: -100vh;
+        z-index: 10;
         backdrop-filter: blur(25px) saturate(186%);
         -webkit-backdrop-filter: blur(25px) saturate(186%);
         justify-content: space-between;
