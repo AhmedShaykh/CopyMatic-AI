@@ -4,7 +4,7 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 import './Navbar.css';
 
-function Navbar() {
+const Navbar = () => {
 
     const [nav, setNav] = useState(false);
     const handleNav = () => setNav(!nav);
@@ -14,7 +14,7 @@ function Navbar() {
             <div className="nav-response" onClick={handleNav}>
                 {!nav ? (<HiOutlineMenuAlt4 className='icon' />) : (<AiOutlineClose style={{ color: '#000' }} className='icon' />)}
             </div>
-            
+
             <div className={nav ? 'logo dark' : 'logo'}>
                 <img src="https://cdn.copymatic.ai/static/logo.svg" alt="copymatic" />
             </div>
