@@ -40,8 +40,12 @@ const Slide = () => {
                     onChange={changeprice} />
             </Box>
             <Box className="pricing-area">
-                <Box className="pricing-top"></Box>
-                <Box className="pricing-bottom"></Box>
+                <Box className="pricing-box pro">
+                    <h5>Pro</h5>
+                </Box>
+                <Box className="pricing-box enterprise">
+                    <h5>Enterprise</h5>
+                </Box>
             </Box>
         </Box>
     )

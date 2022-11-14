@@ -76,3 +76,26 @@
 .slider-area {
     padding-top: 10px;
 }
+
+.pricing-area {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-box {
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -3px #e2dede, 0 4px 6px -2px #bdb9b9;
+    border: 3px solid #404041;
+    display: flex;
+    background: #fff;
+    width: 49%;
+    margin-right: 30px;
+}
+
+.pro {}
+
+.enterprise {}
