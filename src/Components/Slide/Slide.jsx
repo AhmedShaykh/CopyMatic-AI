@@ -9,27 +9,17 @@ const Slide = () => {
 
     const [select, setSelect] = useState(false);
 
-    const handleSelect = () => setNav(!select);
+    const handleSelect = () => setSelect(!select);
 
     return (
         <Box className='slider-box'>
             <Box className='swticher-btn'>
-                <button>Monthly</button>
-                <button>Yearly</button>
+                <button onClick={handleSelect}>Monthly</button>
+                <button onClick={handleSelect}>Yearly</button>
 
                 <span className='free'>4 month's free</span>
             </Box>
-            <Box className='slide-text'>
-                <p>
-                    How many words would you like per month?
-                </p>
-            </Box>
-            <Box className='slide'>
-                <p className='left'>15,000</p>
-                <p className='right'>32,000,000</p>
-            </Box>
-            <Monthly />
-            <Yearly />
+            {!select ? (<Monthly style={{ display: "inline" }}/>) : (<Yearly style={{ display: "none" }} />) ? (<Yearly style={{ display: "inline" }} />) : (<Monthly style={{ display: "none" }} />)}
         </Box>
     )
 };

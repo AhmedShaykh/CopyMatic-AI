@@ -6,7 +6,7 @@ import './Monthly.css';
 
 const Monthly = () => {
 
-  const [price, SetPrice] = useState(29);
+  const [price, SetPrice] = useState(49);
 
   const changeprice = (event, price) => {
     SetPrice(price);
@@ -15,11 +15,20 @@ const Monthly = () => {
   return (
     <div>
       <Box className="slider-area">
+        <Box className='slide-text'>
+          <p>
+            How many words would you like per month?
+          </p>
+        </Box>
+        <Box className='slide'>
+          <p className='left'>15,000</p>
+          <p className='right'>32,000,000</p>
+        </Box>
         <Slider display="flex" flexDirection="column" alignItems="center"
           style={{ width: 700, color: "#2615C7" }}
           min={9}
           max={499}
-          step={50}
+          step={45}
           price={price}
           marks
           onChange={changeprice} />
