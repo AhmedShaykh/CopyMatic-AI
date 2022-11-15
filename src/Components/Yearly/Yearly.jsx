@@ -8,7 +8,7 @@ const Yearly = () => {
 
     const [price, SetPrice] = useState(32);
 
-    const changeprice = (event, price) => {
+    const changeprice = (price) => {
         SetPrice(price);
     };
 
